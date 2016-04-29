@@ -1,0 +1,30 @@
+{
+  "name": "push2cloud-compiler-cf-app-connections",
+  "version": "1.0.0",
+  "description": "plugin for push2cloud-compiler cf-app-connections",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "npm run lint"
+  },
+  "engines": {
+    "node": ">=4.2.0"
+  },
+  "author": "Adriano Raiano <adriano@raiano.ch> (https://github.com/adrai)",
+  "contributors": [
+    "Adriano Raiano <adriano@raiano.ch> (https://github.com/adrai)",
+    "Christoph Hermann <schtoeffel@gmail.com> (http://stoeffel.github.io/)",
+    "Michael Erne <michael.erne@gmail.com> (https://github.com/michaelerne)"
+  ],
+  "license": "Apache-2.0",
+  "repository": "push2cloud/compiler-cf-app-connections",
+  "homepage": "http://push2.cloud/",
+  "devDependencies": {
+    "eslint": "2.8.0"
+  },
+  "dependencies": {
+    "debug": "2.2.0",
+    "lodash": "4.11.1",
+    "underscore.string": "3.3.4"
+  }
+}
