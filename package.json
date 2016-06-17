@@ -20,7 +20,7 @@
   "repository": "push2cloud/compiler-cf-app-connections",
   "homepage": "http://push2.cloud/",
   "devDependencies": {
-    "eslint": "2.12.0"
+    "eslint": "2.13.0"
   },
   "dependencies": {
     "debug": "2.2.0",
