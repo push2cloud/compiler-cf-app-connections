@@ -55,7 +55,16 @@ const appConnections = (config, mani, t, next) => {
           proto = 'https://';
         }
 
-        const urlTemplate = _.template(proto + route + '.' + mani.deployment.domains[connection.domain]);
+        if (_.isString(route)) {
+          route = {
+            hostname: route,
+            path: ''
+          };
+        }
+
+        route.path = route.path || '';
+
+        const urlTemplate = _.template(proto + route.hostname + '.' + mani.deployment.domains[connection.domain] + (route.port ? `:${route.port}` : '') + route.path);
 
         const toAppMani = t.findApp(toApp);
         if (!toAppMani) {
