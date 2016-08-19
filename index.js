@@ -47,7 +47,7 @@ const appConnections = (config, mani, t, next) => {
           return next(new Error(`Route to ${toApp} not found!`));
         }
 
-        const route = routes[0]; // at the moment just take the first?
+        var route = routes[0]; // at the moment just take the first?
         var proto = 'http://';
         if (connection.secure === true || connection.secure === false) {
           if (connection.secure) proto = 'https://';
