@@ -1,6 +1,6 @@
 {
   "name": "push2cloud-compiler-cf-app-connections",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "plugin for push2cloud-compiler cf-app-connections",
   "main": "index.js",
   "scripts": {
